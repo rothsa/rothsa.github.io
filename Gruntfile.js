@@ -5,6 +5,7 @@ module.exports = function(grunt){
     sass: {
       dist: {
         options: {
+          implementation: require('sass'),
           style: 'expanded',
           precision: 15
         },
@@ -113,7 +114,7 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-compress');
   
-  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-sass');
   
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('@lodder/grunt-postcss');

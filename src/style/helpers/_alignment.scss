@@ -1,7 +1,9 @@
+@use "../gutenberg-config";
+
 // Float defaults
 .floatLeft {
 
-  @media screen and (min-width: #{ $max-width + 5 + 'em'}) {
+  @media screen and (min-width: #{ gutenberg-config.$max-width + 5 + 'em'}) {
     float: left;
   }
 
@@ -9,7 +11,7 @@
 
 .floatCenter {
 
-  @media screen and (min-width: #{ $max-width + 5 + 'em'}) {
+  @media screen and (min-width: #{ gutenberg-config.$max-width + 5 + 'em'}) {
     margin-left: auto;
     margin-right: auto;
   }
@@ -18,7 +20,7 @@
 
 .floatRight {
 
-  @media screen and (min-width: #{ $max-width + 5 + 'em'}) {
+  @media screen and (min-width: #{ gutenberg-config.$max-width + 5 + 'em'}) {
     float: right;
   }
 

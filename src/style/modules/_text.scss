@@ -1,3 +1,8 @@
+@use "../gutenberg-config";
+@use "../mixins/line-height" as line-height;
+@use "../mixins/margin" as margin;
+@use "../mixins/font-size" as font-size;
+
 // Clear margin for line breaks
 br {
   margin-bottom: 0;
@@ -37,17 +42,12 @@ mark {
 }
 
 small {
-  @include line-height(.5);
+  @include line-height.line-height(.5);
 
   font-size: 70%;
 
-  @media screen and (min-width: #{ $max-width + 5 + 'em'}) {
-    $leading: $leading-desktop;
-    $leading-rem: $leading-rem-desktop;
-
-    @import '../mixins/line-height';
-
-    @include line-height(.5);
+  @media screen and (min-width: #{ gutenberg-config.$max-width + 5 + 'em'}) {
+    @include line-height.line-height(.5);
   }
 
 }
@@ -72,24 +72,21 @@ sub {
 /* Paragraph
 ========================================================================== */
 
-@if $paragraph-indent == true {
+@if gutenberg-config.$paragraph-indent == true {
 
   p + p {
-    @include margin-top(-1);
-    text-indent: #{ $leading + 'px'};
-    text-indent: #{ $leading-rem + 'rem'};
+    @include margin.margin-top(-1);
+    text-indent: #{ gutenberg-config.$leading + 'px'};
+    text-indent: #{ gutenberg-config.$leading-rem + 'rem'};
 
   }
 
   .floatLeft + p,
   .floatRight + p {
 
-    @media screen and (min-width: #{ $max-width + 5 + 'em'}) {
-      $leading: $leading-desktop;
-      $leading-rem: $leading-rem-desktop;
-
-      text-indent: #{ $leading + 'px'};
-      text-indent: #{ $leading-rem + 'rem'};
+    @media screen and (min-width: #{ gutenberg-config.$max-width + 5 + 'em'}) {
+      text-indent: #{ gutenberg-config.$leading + 'px'};
+      text-indent: #{ gutenberg-config.$leading-rem + 'rem'};
     }
 
   }
@@ -102,21 +99,16 @@ sub {
 
 // Attention grabber
 .attention-grabber {
-  @include font-size(1.2);
+  @include font-size.font-size(1.2);
 }
 
-@media screen and (min-width: #{ $max-width + 5 + 'em'}) {
-  $leading: $leading-desktop;
-  $leading-rem: $leading-rem-desktop;
-
-  @import '../mixins/margin';
-
-  @if $paragraph-indent == true {
+@media screen and (min-width: #{ gutenberg-config.$max-width + 5 + 'em'}) {
+  @if gutenberg-config.$paragraph-indent == true {
 
     p + p,
     .floatLeft + p,
     .floatRight + p {
-      @include margin-top(-1);
+      @include margin.margin-top(-1);
     }
 
   }
