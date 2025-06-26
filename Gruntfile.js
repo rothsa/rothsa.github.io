@@ -76,17 +76,7 @@ module.exports = function(grunt){
       }
     },
 
-    // Image Compress
-    imagemin: {
-      dynamic: {
-        files: [{
-          expand: true,
-            cwd: 'assets/images/',
-            src: ['**/*.{png,jpg,gif}'],
-            dest: 'assets/images/'
-        }]
-      }
-    },
+    
     // Watch
     watch: {
       html: {
@@ -119,21 +109,15 @@ module.exports = function(grunt){
     },
     // Linting
     postcss: {
-      scsslint: {
-        options: {
-          writeDest: false,
-          syntax: require('postcss-scss'),
-          processors: [
-            require('stylelint')(),
-            require('postcss-reporter')({ clearMessages: true })
-          ]
-        },
-        files: [{
-          expand: true,
-          cwd: 'src/style',
-          src: ['*.scss']
-        }]
+      options: {
+        processors: [
+          require('stylelint')(),
+          require('postcss-reporter')({ clearMessages: true })
+        ]
       },
+      dist: {
+        src: ['src/style/*.css']
+      }
     }
   });
 
@@ -141,12 +125,12 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-compress');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-postcss');
+  grunt.loadNpmTasks('@lodder/grunt-postcss');
 
   grunt.registerTask('default', [ 'browserSync', 'watch' ]);
-  grunt.registerTask('lint', [ 'postcss:scsslint' ]);
+  grunt.registerTask('lint', [ 'postcss' ]);
 };
