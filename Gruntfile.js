@@ -61,20 +61,7 @@ module.exports = function(grunt){
         ]
       }
     },
-    // Browser Sync
-    browserSync: {
-      bsFiles: {
-        src: ['assets/*.css', '*.html']
-      },
-      options: {
-        server: {
-          baseDir: "./"
-        },
-        // xip: true,
-        ghostMode: true,
-        watchTask: true
-      }
-    },
+    
 
     
     // Watch
@@ -127,10 +114,21 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-compress');
   
   grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-browser-sync');
+  
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('@lodder/grunt-postcss');
 
-  grunt.registerTask('default', [ 'browserSync', 'watch' ]);
+  grunt.registerTask('default', [ 'browserSyncCLI', 'watch' ]);
   grunt.registerTask('lint', [ 'postcss' ]);
+  grunt.registerTask('browserSyncCLI', function() {
+    var done = this.async();
+    require('browser-sync').create().init({
+      server: {
+        baseDir: "./"
+      },
+      files: ['assets/*.css', '*.html'],
+      ghostMode: true,
+      watch: true
+    }, done);
+  });
 };

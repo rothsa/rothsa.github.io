@@ -4,6 +4,7 @@
   "description": "Gutenberg is a flexible and simple–to–use web typography starter kit for web designers and developers. It’s a small step towards a better typography on the web. Beautiful typographic styles can be made by setting base type size, line-height (leading) and measure (max-width).",
   "main": "index.html",
   "dependencies": {
+    "browser-sync": "^3.0.4",
     "decompress": "^4.2.1"
   },
   "scripts": {
@@ -26,20 +27,16 @@
   "devDependencies": {
     "@lodder/grunt-postcss": "^3.0.0",
     "grunt": "^1.6.1",
-    "grunt-browser-sync": "^2.2.0",
+    
     "grunt-contrib-compress": "^2.0.0",
     "grunt-contrib-concat": "^2.1.0",
     "grunt-contrib-cssmin": "^5.0.0",
-    
-    "imagemin": "^9.0.1",
-    
-    
-    
-    "imagemin-svgo": "^11.0.1",
     "grunt-contrib-sass": "^2.0.0",
     "grunt-contrib-uglify": "^5.2.2",
     "grunt-contrib-watch": "^1.1.0",
-    "stylelint": "^16.21.0",
-    "postcss-reporter": "^7.1.0"
+    "imagemin": "^9.0.1",
+    "imagemin-svgo": "^11.0.1",
+    "postcss-reporter": "^7.1.0",
+    "stylelint": "^16.21.0"
   }
 }
