@@ -1,7 +1,4 @@
 @use "../gutenberg-config";
-@use "../mixins/font-size" as font-size;
-@use "../mixins/line-height" as line-height;
-@use "../mixins/margin" as margin;
 
 /* Headings
    ========================================================================== */
@@ -20,20 +17,20 @@ $headings: (
 // Set headings sizes, line-heights and margins
 @each $heading, $properties in $headings {
   #{$heading} {
-    @include font-size.font-size(nth($properties, 1));
-    @include line-height.line-height(nth($properties, 2));
-    @include margin.margin-top(nth($properties, 3));
-    @include margin.margin-bottom(nth($properties, 4));
+    font-size: #{nth($properties, 1) * 1rem};
+    line-height: #{nth($properties, 2) * 1.625rem};
+    margin-top: #{nth($properties, 3) * 1.625rem};
+    margin-bottom: #{nth($properties, 4) * 1.625rem};
   }
 }
 
-@media screen and (min-width: #{ gutenberg-config.$max-width + 5 + 'em'}) {
+@media screen and (min-width: 40em) {
   @each $heading, $properties in $headings {
     #{$heading} {
-      @include font-size.font-size(nth($properties, 1));
-      @include line-height.line-height(nth($properties, 2));
-      @include margin.margin-top(nth($properties, 3));
-      @include margin.margin-bottom(nth($properties, 4));
+      font-size: #{nth($properties, 1) * 1.125rem};
+      line-height: #{nth($properties, 2) * 1.7rem};
+      margin-top: #{nth($properties, 3) * 1.7rem};
+      margin-bottom: #{nth($properties, 4) * 1.7rem};
     }
   }
 
@@ -41,10 +38,10 @@ $headings: (
 
 // Set margins between headings
 h1 + h2 {
-  @include margin.margin-top(1);
+  margin-top: 1.625rem;
 
-  @media screen and (min-width: #{ gutenberg-config.$max-width + 5 + 'em'}) {
-    @include margin.margin-top(1);
+  @media screen and (min-width: 40em) {
+    margin-top: 1.7222222222rem;
   }
 
 }
@@ -52,19 +49,19 @@ h1 + h2 {
 h2 + h3,
 h3 + h4,
 h4 + h5 {
-  @include margin.margin-top(.5);
+  margin-top: .8125rem;
 
-  @media screen and (min-width: #{ gutenberg-config.$max-width + 5 + 'em'}) {
-    @include margin.margin-top(.5);
+  @media screen and (min-width: 40em) {
+    margin-top: .8611111111rem;
   }
 
 }
 
 h5 + h6 {
-  @include margin.margin-top(-.5);
+  margin-top: -.8125rem;
 
-  @media screen and (min-width: #{ gutenberg-config.$max-width + 5 + 'em'}) {
-    @include margin.margin-top(-.5);
+  @media screen and (min-width: 40em) {
+    margin-top: -.8611111111rem;
   }
 
 }

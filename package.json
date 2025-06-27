@@ -7,12 +7,14 @@
     "bootstrap": "^5.3.7",
     "browser-sync": "^3.0.4",
     "decompress": "^4.2.1",
+    "grunt-cli": "^1.5.0",
     "grunt-sass": "^4.0.0",
     "sass": "^1.89.2"
   },
   "scripts": {
     "test": "stylelint src/style/**/*.scss",
-    "build": "grunt sass concat cssmin uglify compress"
+    "build": "grunt sass concat cssmin uglify compress",
+    "start": "grunt"
   },
   "repository": {
     "type": "git",

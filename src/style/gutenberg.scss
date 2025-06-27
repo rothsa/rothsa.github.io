@@ -11,13 +11,7 @@ License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/li
 @use "gutenberg-config";
 @use "../../node_modules/bootstrap/scss/bootstrap";
 
-@use "mixins/font-size";
-@use "mixins/line-height";
-@use "mixins/margin";
-@use "mixins/padding";
-
 @use "helpers/alignment";
-@use "helpers/grid";
 
 @use "layout/aside";
 @use "layout/base";

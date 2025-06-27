@@ -1,5 +1,4 @@
 @use "../gutenberg-config";
-@use "../mixins/margin" as margin;
 
 // Horizontal rule
 $hr-style: line; // [ line / type ]
@@ -12,29 +11,26 @@ $hr-width: 100; // [ 100 ] — In pixels, only for line style
 $hr-height: 4; // [ 2 ] — In pixels, only for line style
 
 hr {
-  @include margin.margin-top($hr-margin);
-  @include margin.margin-bottom($hr-margin);
+  margin-top: 3.25rem;
+  margin-bottom: 3.25rem;
 
   box-sizing: content-box;
   border: 0;
   color: $hr-color;
   display: block;
-  height: #{gutenberg-config.$leading + 'px'};
-  height: #{gutenberg-config.$leading-rem + 'rem'};
+  height: 1.625rem;
   margin-right: auto;
   margin-left: auto;
 
-  @media screen and (min-width: #{ gutenberg-config.$max-width + 5 + 'em'}) {
-    @include margin.margin-top($hr-margin);
-    @include margin.margin-bottom($hr-margin);
-    height: #{gutenberg-config.$leading-desktop + 'px'};
-    height: #{gutenberg-config.$leading-rem-desktop + 'rem'};
+  @media screen and (min-width: 40em) {
+    margin-top: 3.444444444444445rem;
+    margin-bottom: 3.444444444444445rem;
+    height: 1.7222222222rem;
   }
 
   @if $hr-style == 'line' {
-    background-size: 100% #{gutenberg-config.$leading + 'px'};
-    background-size: 100% #{gutenberg-config.$leading-rem + 'rem'};
-    background-image: linear-gradient(to bottom, transparent 1px, transparent #{ 0.5 * gutenberg-config.$leading - (0.5 * $hr-height) + 'px'},  $hr-color #{ 0.5 * gutenberg-config.$leading - (0.5 * $hr-height) + 'px'}, $hr-color #{ (0.5 * gutenberg-config.$leading  - (0.5 * $hr-height)) + $hr-height + 'px'}, transparent #{ (0.5 * gutenberg-config.$leading  - (0.5 * $hr-height)) + $hr-height + 'px'}, transparent #{gutenberg-config.$leading + 'px'});
+    background-size: 100% 1.625rem;
+    background-image: linear-gradient(to bottom, transparent 1px, transparent #{ 0.5 * 26 - (0.5 * $hr-height) + 'px'},  $hr-color #{ 0.5 * 26 - (0.5 * $hr-height) + 'px'}, $hr-color #{ (0.5 * 26  - (0.5 * $hr-height)) + $hr-height + 'px'}, transparent #{ (0.5 * 26  - (0.5 * $hr-height)) + $hr-height + 'px'}, transparent 26px);
 
     @if $hr-width == null {
       width: 100%;
@@ -43,11 +39,10 @@ hr {
     }
   }
 
-  @media screen and (min-width: #{ gutenberg-config.$max-width + 5 + 'em'}) {
+  @media screen and (min-width: 40em) {
     @if $hr-style == 'line' {
-      background-size: 100% #{gutenberg-config.$leading-desktop + 'px'};
-      background-size: 100% #{gutenberg-config.$leading-rem-desktop + 'rem'};
-      background-image: linear-gradient(to bottom, transparent 1px, transparent #{ .5 * gutenberg-config.$leading-desktop - (.5 * $hr-height) + 'px'}, $hr-color #{ .5 * gutenberg-config.$leading-desktop - (.5 * $hr-height) + 'px'}, $hr-color #{ (.5 * gutenberg-config.$leading-desktop - (.5 * $hr-height)) + $hr-height + 'px'}, transparent #{ (.5 * gutenberg-config.$leading-desktop - (.5 * $hr-height)) + $hr-height + 'px'}, transparent #{gutenberg-config.$leading-desktop + 'px'});
+      background-size: 100% 1.7222222222rem;
+      background-image: linear-gradient(to bottom, transparent 1px, transparent #{ .5 * 31 - (.5 * $hr-height) + 'px'}, $hr-color #{ .5 * 31 - (.5 * $hr-height) + 'px'}, $hr-color #{ (.5 * 31 - (.5 * $hr-height)) + $hr-height + 'px'}, transparent #{ (.5 * 31 - (.5 * $hr-height)) + $hr-height + 'px'}, transparent 31px);
     }
 
   }

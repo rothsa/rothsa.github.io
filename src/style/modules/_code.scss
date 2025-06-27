@@ -1,6 +1,3 @@
-@use "../mixins/padding" as padding;
-@use "../gutenberg-config";
-
 // Contain overflow in all browsers.
 pre {
   overflow: auto;
@@ -15,12 +12,12 @@ samp {
 }
 
 code {
-  @include padding.padding-equal(1);
+  padding: 1.625rem;
 
   display: block;
 
-  @media screen and (min-width: #{ gutenberg-config.$max-width + 5 + 'em'}) {
-    @include padding.padding-equal(1);
+  @media screen and (min-width: 40em) {
+    padding: 1.7222222222rem;
   }
 
 }

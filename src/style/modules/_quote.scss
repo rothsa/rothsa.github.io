@@ -1,14 +1,11 @@
 @use "../gutenberg-config";
-@use "../mixins/padding" as padding;
-@use "../mixins/font-size" as font-size;
-@use "../mixins/line-height" as line-height;
 
 blockquote {
   font-style: italic;
   padding-left: 1.4375rem;
   // font-size: 95%;
 
-  @media screen and (min-width: #{ gutenberg-config.$max-width + 5 + 'em'}) {
+  @media screen and (min-width: 40em) {
     padding-left: 2rem;
   }
 
@@ -21,20 +18,20 @@ cite {
 
 // Quotes
 figure blockquote {
-  @include padding.padding(1, 0);
+  padding: 1.625rem 0;
 
-  @media screen and (min-width: #{ gutenberg-config.$max-width + 5 + 'em'}) {
-    @include padding.padding(2, 0, 1);
+  @media screen and (min-width: 40em) {
+    padding: 3.25rem 0 1.625rem;
     text-align: center;
   }
 
   p {
-    @include font-size.font-size(1.6875);
-    @include line-height.line-height(1.5);
+    font-size: 1.6875rem;
+    line-height: 2.4375rem;
 
-    @media screen and (min-width: #{ gutenberg-config.$max-width + 5 + 'em'}) {
-      @include font-size.font-size(1.6875);
-      @include line-height.line-height(1.5);
+    @media screen and (min-width: 40em) {
+      font-size: 1.6875rem;
+      line-height: 2.583333333333334rem;
     }
 
   }

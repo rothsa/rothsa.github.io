@@ -1,7 +1,0 @@
-@use "../gutenberg-config";
-
-// Line-height
-@mixin line-height($number) {
-  line-height: #{ $number * gutenberg-config.$leading + 'px'};
-  line-height: #{ $number * gutenberg-config.$leading-rem + 'rem'};
-}

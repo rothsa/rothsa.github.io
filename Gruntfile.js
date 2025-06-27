@@ -65,36 +65,7 @@ module.exports = function(grunt){
     
 
     
-    // Watch
-    watch: {
-      html: {
-        files: ['*.html'],
-        options: {
-          livereload: true,
-        }
-      },
-      scss: {
-        files: ['**/*.scss'],
-        tasks: ['sass'],
-        options: {
-          livereload: true,
-        }
-      },
-      css: {
-        files: ['src/style/*.css'],
-        tasks: ['concat:css', 'cssmin', 'compress:css'],
-        options: {
-          livereload: true,
-        }
-      },
-      js: {
-        files: ['src/js/*.js'],
-        tasks: ['concat:js', 'uglify', 'compress:js'],
-        options: {
-          livereload: true,
-        }
-      }
-    },
+    
     // Linting
     postcss: {
       options: {
@@ -105,6 +76,32 @@ module.exports = function(grunt){
       },
       dist: {
         src: ['src/style/*.css']
+      }
+    },
+    // Watch
+    watch: {
+      html: {
+        files: ['*.html'],
+        options: {
+        }
+      },
+      scss: {
+        files: ['src/style/**/*.scss'],
+        tasks: ['sass'],
+        options: {
+        }
+      },
+      css: {
+        files: ['src/style/*.css'],
+        tasks: ['concat:css', 'cssmin', 'compress:css'],
+        options: {
+        }
+      },
+      js: {
+        files: ['src/js/*.js'],
+        tasks: ['concat:js', 'uglify', 'compress:js'],
+        options: {
+        }
       }
     }
   });
@@ -119,7 +116,6 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('@lodder/grunt-postcss');
 
-  grunt.registerTask('default', [ 'browserSyncCLI', 'watch' ]);
   grunt.registerTask('lint', [ 'postcss' ]);
   grunt.registerTask('browserSyncCLI', function() {
     var done = this.async();
@@ -128,8 +124,8 @@ module.exports = function(grunt){
         baseDir: "./"
       },
       files: ['assets/*.css', '*.html'],
-      ghostMode: true,
-      watch: true
+      ghostMode: true
     }, done);
   });
+  grunt.registerTask('default', [ 'browserSyncCLI', 'watch' ]);
 };

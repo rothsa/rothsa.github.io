@@ -1,7 +1,0 @@
-@use "../gutenberg-config";
-
-// Font-size
-@mixin font-size($number) {
-  font-size: #{ $number * gutenberg-config.$base + 'px'};
-  font-size: #{ $number + 'rem'};
-}

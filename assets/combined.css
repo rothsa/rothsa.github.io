@@ -110,11 +110,8 @@ License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/li
 */
 /* Configuration
    ========================================================================== */
-/* Calculations
-   ========================================================================== */
 /* Font themes
    ========================================================================== */
-@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic");
 /*!
  * Bootstrap  v5.3.7 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
@@ -11979,42 +11976,6 @@ Authors ....... Matej Latin (@matejlatin)
 License ....... Creative Commmons Attribution 3.0
 License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/license.txt
 */
-/*
-Gutenberg: A Meaningful Web Typography Starter Kit
-Website ....... http://matejlatin.github.io/Gutenberg/
-Version ....... 1.2.3
-Github ........ https://github.com/matejlatin/Gutenberg
-Authors ....... Matej Latin (@matejlatin)
-License ....... Creative Commmons Attribution 3.0
-License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/license.txt
-*/
-/*
-Gutenberg: A Meaningful Web Typography Starter Kit
-Website ....... http://matejlatin.github.io/Gutenberg/
-Version ....... 1.2.3
-Github ........ https://github.com/matejlatin/Gutenberg
-Authors ....... Matej Latin (@matejlatin)
-License ....... Creative Commmons Attribution 3.0
-License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/license.txt
-*/
-/*
-Gutenberg: A Meaningful Web Typography Starter Kit
-Website ....... http://matejlatin.github.io/Gutenberg/
-Version ....... 1.2.3
-Github ........ https://github.com/matejlatin/Gutenberg
-Authors ....... Matej Latin (@matejlatin)
-License ....... Creative Commmons Attribution 3.0
-License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/license.txt
-*/
-/*
-Gutenberg: A Meaningful Web Typography Starter Kit
-Website ....... http://matejlatin.github.io/Gutenberg/
-Version ....... 1.2.3
-Github ........ https://github.com/matejlatin/Gutenberg
-Authors ....... Matej Latin (@matejlatin)
-License ....... Creative Commmons Attribution 3.0
-License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/license.txt
-*/
 @media screen and (min-width: 40em) {
   .floatLeft {
     float: left;
@@ -12032,92 +11993,6 @@ License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/li
   .floatRight {
     float: right;
   }
-}
-
-/*
-Gutenberg: A Meaningful Web Typography Starter Kit
-Website ....... http://matejlatin.github.io/Gutenberg/
-Version ....... 1.2.3
-Github ........ https://github.com/matejlatin/Gutenberg
-Authors ....... Matej Latin (@matejlatin)
-License ....... Creative Commmons Attribution 3.0
-License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/license.txt
-*/
-/* Grid
-   ========================================================================== */
-.grid, .grid-double {
-  background-image: linear-gradient(to bottom, hsla(200, 100%, 50%, 0.3) 1px, transparent 1px);
-  background-position: left top;
-  background-repeat: repeat;
-  background-size: 100% 26px;
-  background-size: 100% 1.625rem;
-}
-@media screen and (min-width: 40em) {
-  .grid, .grid-double {
-    background-size: 100% 31px;
-    background-size: 100% 1.7222222222rem;
-  }
-}
-
-.grid-double {
-  background-image: linear-gradient(to bottom, hsla(200, 100%, 50%, 0.3) 1px, transparent 1px, transparent 13px, hsla(200, 100%, 50%, 0.2) 13px, transparent 14px, transparent 26px);
-}
-@media screen and (min-width: 40em) {
-  .grid-double {
-    background-image: linear-gradient(to bottom, hsla(200, 100%, 50%, 0.3) 1px, transparent 1px, transparent 13px, hsla(200, 100%, 50%, 0.2) 13px, transparent 14px, transparent 26px);
-  }
-}
-
-.toggleWrapper {
-  display: block;
-  position: fixed;
-  top: 26px;
-  right: 26px;
-  background-color: #231F20;
-  border-radius: 25px;
-  padding: 0 10px 0 20px;
-  height: 32px;
-}
-@media screen and (min-width: 40em) {
-  .toggleWrapper {
-    right: 31px;
-    top: 31px;
-  }
-}
-
-.btnToggleGrid {
-  background: url("../../assets/images/grid-icons.png") top right no-repeat;
-  background-size: 32px;
-  display: block;
-  font-size: 14px;
-  text-decoration: none;
-  padding-right: 35px;
-  height: 32px;
-  line-height: 34px;
-  font-family: Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #fff;
-}
-@media screen and (min-width: 40em) {
-  .btnToggleGrid {
-    top: 26px;
-    right: 26px;
-  }
-}
-.btnToggleGrid:hover {
-  color: #fff;
-}
-.btnToggleGrid:active {
-  color: #f00;
-}
-
-.double-grid {
-  background-position-y: -32px;
-}
-
-.grid-off {
-  background-position-y: -64px;
 }
 
 aside {
@@ -12224,13 +12099,6 @@ article {
   margin: 0 auto;
   width: 80%;
 }
-@media screen and (min-width: 40em) {
-  article {
-    max-width: 945px;
-    max-width: 52.5rem;
-  }
-}
-
 audio {
   display: inline-block;
   vertical-align: baseline;
@@ -12245,15 +12113,6 @@ canvas {
   vertical-align: baseline;
 }
 
-/*
-Gutenberg: A Meaningful Web Typography Starter Kit
-Website ....... http://matejlatin.github.io/Gutenberg/
-Version ....... 1.2.3
-Github ........ https://github.com/matejlatin/Gutenberg
-Authors ....... Matej Latin (@matejlatin)
-License ....... Creative Commmons Attribution 3.0
-License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/license.txt
-*/
 pre {
   overflow: auto;
 }
@@ -12266,14 +12125,12 @@ samp {
 }
 
 code {
-  padding: 26px;
   padding: 1.625rem;
   display: block;
 }
 @media screen and (min-width: 40em) {
   code {
-    padding: 26px;
-    padding: 1.625rem;
+    padding: 1.7222222222rem;
   }
 }
 
@@ -12295,7 +12152,6 @@ License ....... Creative Commmons Attribution 3.0
 License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/license.txt
 */
 figcaption {
-  line-height: 26px;
   line-height: 1.625rem;
   color: #222;
   display: block;
@@ -12306,8 +12162,7 @@ figcaption {
 }
 @media screen and (min-width: 40em) {
   figcaption {
-    line-height: 26px;
-    line-height: 1.625rem;
+    line-height: 1.7222222222rem;
     margin-bottom: 0;
   }
 }
@@ -12319,26 +12174,21 @@ figure {
 @media screen and (min-width: 40em) {
   figure.floatLeft,
   figure.floatRight {
-    max-width: 315px;
     max-width: 17.5rem;
-    padding: 0px 26px;
-    padding: 0rem 1.625rem;
+    padding: 0 1.625rem;
   }
 }
 @media screen and (min-width: 40em) {
   figure.floatLeft blockquote,
   figure.floatRight blockquote {
-    padding: 0px;
-    padding: 0rem;
+    padding: 0;
     text-align: left;
   }
 }
 @media screen and (min-width: 40em) {
   figure.floatLeft blockquote p,
   figure.floatRight blockquote p {
-    font-size: 19.2px;
     font-size: 1.2rem;
-    line-height: 26px;
     line-height: 1.625rem;
   }
 }
@@ -12355,167 +12205,113 @@ License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/li
 /* Headings
    ========================================================================== */
 h1 {
-  font-size: 40px;
   font-size: 2.5rem;
-  line-height: 52px;
   line-height: 3.25rem;
-  margin-top: 104px;
   margin-top: 6.5rem;
-  margin-bottom: 26px;
   margin-bottom: 1.625rem;
 }
 
 h2 {
-  font-size: 27px;
   font-size: 1.6875rem;
-  line-height: 39px;
   line-height: 2.4375rem;
-  margin-top: 65px;
   margin-top: 4.0625rem;
-  margin-bottom: 13px;
   margin-bottom: 0.8125rem;
 }
 
 h3 {
-  font-size: 22px;
   font-size: 1.375rem;
-  line-height: 26px;
   line-height: 1.625rem;
-  margin-top: 52px;
   margin-top: 3.25rem;
-  margin-bottom: 13px;
   margin-bottom: 0.8125rem;
 }
 
 h4 {
-  font-size: 19.2px;
   font-size: 1.2rem;
-  line-height: 26px;
   line-height: 1.625rem;
-  margin-top: 39px;
   margin-top: 2.4375rem;
-  margin-bottom: 13px;
   margin-bottom: 0.8125rem;
 }
 
 h5 {
-  font-size: 16px;
   font-size: 1rem;
-  line-height: 26px;
   line-height: 1.625rem;
-  margin-top: 65px;
   margin-top: 4.0625rem;
-  margin-bottom: 13px;
   margin-bottom: 0.8125rem;
 }
 
 h6 {
-  font-size: 16px;
   font-size: 1rem;
-  line-height: 26px;
   line-height: 1.625rem;
-  margin-top: 65px;
   margin-top: 4.0625rem;
-  margin-bottom: 13px;
   margin-bottom: 0.8125rem;
 }
 
 @media screen and (min-width: 40em) {
   h1 {
-    font-size: 40px;
-    font-size: 2.5rem;
-    line-height: 52px;
-    line-height: 3.25rem;
-    margin-top: 104px;
-    margin-top: 6.5rem;
-    margin-bottom: 26px;
-    margin-bottom: 1.625rem;
+    font-size: 2.8125rem;
+    line-height: 3.4rem;
+    margin-top: 6.8rem;
+    margin-bottom: 1.7rem;
   }
   h2 {
-    font-size: 27px;
-    font-size: 1.6875rem;
-    line-height: 39px;
-    line-height: 2.4375rem;
-    margin-top: 65px;
-    margin-top: 4.0625rem;
-    margin-bottom: 13px;
-    margin-bottom: 0.8125rem;
+    font-size: 1.8984375rem;
+    line-height: 2.55rem;
+    margin-top: 4.25rem;
+    margin-bottom: 0.85rem;
   }
   h3 {
-    font-size: 22px;
-    font-size: 1.375rem;
-    line-height: 26px;
-    line-height: 1.625rem;
-    margin-top: 52px;
-    margin-top: 3.25rem;
-    margin-bottom: 13px;
-    margin-bottom: 0.8125rem;
+    font-size: 1.546875rem;
+    line-height: 1.7rem;
+    margin-top: 3.4rem;
+    margin-bottom: 0.85rem;
   }
   h4 {
-    font-size: 19.2px;
-    font-size: 1.2rem;
-    line-height: 26px;
-    line-height: 1.625rem;
-    margin-top: 39px;
-    margin-top: 2.4375rem;
-    margin-bottom: 13px;
-    margin-bottom: 0.8125rem;
+    font-size: 1.35rem;
+    line-height: 1.7rem;
+    margin-top: 2.55rem;
+    margin-bottom: 0.85rem;
   }
   h5 {
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 26px;
-    line-height: 1.625rem;
-    margin-top: 65px;
-    margin-top: 4.0625rem;
-    margin-bottom: 13px;
-    margin-bottom: 0.8125rem;
+    font-size: 1.125rem;
+    line-height: 1.7rem;
+    margin-top: 4.25rem;
+    margin-bottom: 0.85rem;
   }
   h6 {
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 26px;
-    line-height: 1.625rem;
-    margin-top: 65px;
-    margin-top: 4.0625rem;
-    margin-bottom: 13px;
-    margin-bottom: 0.8125rem;
+    font-size: 1.125rem;
+    line-height: 1.7rem;
+    margin-top: 4.25rem;
+    margin-bottom: 0.85rem;
   }
 }
 h1 + h2 {
-  margin-top: 26px;
   margin-top: 1.625rem;
 }
 @media screen and (min-width: 40em) {
   h1 + h2 {
-    margin-top: 26px;
-    margin-top: 1.625rem;
+    margin-top: 1.7222222222rem;
   }
 }
 
 h2 + h3,
 h3 + h4,
 h4 + h5 {
-  margin-top: 13px;
   margin-top: 0.8125rem;
 }
 @media screen and (min-width: 40em) {
   h2 + h3,
   h3 + h4,
   h4 + h5 {
-    margin-top: 13px;
-    margin-top: 0.8125rem;
+    margin-top: 0.8611111111rem;
   }
 }
 
 h5 + h6 {
-  margin-top: -13px;
   margin-top: -0.8125rem;
 }
 @media screen and (min-width: 40em) {
   h5 + h6 {
-    margin-top: -13px;
-    margin-top: -0.8125rem;
+    margin-top: -0.8611111111rem;
   }
 }
 
@@ -12538,36 +12334,28 @@ License ....... Creative Commmons Attribution 3.0
 License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/license.txt
 */
 hr {
-  margin-top: 52px;
   margin-top: 3.25rem;
-  margin-bottom: 52px;
   margin-bottom: 3.25rem;
   box-sizing: content-box;
   border: 0;
   color: #222;
   display: block;
-  height: 26px;
   height: 1.625rem;
   margin-right: auto;
   margin-left: auto;
-  background-size: 100% 26px;
   background-size: 100% 1.625rem;
   background-image: linear-gradient(to bottom, transparent 1px, transparent 11px, #222 11px, #222 15px, transparent 15px, transparent 26px);
   width: 100px;
 }
 @media screen and (min-width: 40em) {
   hr {
-    margin-top: 52px;
-    margin-top: 3.25rem;
-    margin-bottom: 52px;
-    margin-bottom: 3.25rem;
-    height: 31px;
+    margin-top: 3.4444444444rem;
+    margin-bottom: 3.4444444444rem;
     height: 1.7222222222rem;
   }
 }
 @media screen and (min-width: 40em) {
   hr {
-    background-size: 100% 31px;
     background-size: 100% 1.7222222222rem;
     background-image: linear-gradient(to bottom, transparent 1px, transparent 13.5px, #222 13.5px, #222 17.5px, transparent 17.5px, transparent 31px);
   }
@@ -12623,28 +12411,22 @@ cite {
 }
 
 figure blockquote {
-  padding: 26px 0px;
-  padding: 1.625rem 0rem;
+  padding: 1.625rem 0;
 }
 @media screen and (min-width: 40em) {
   figure blockquote {
-    padding: 52px 0px 26px;
-    padding: 3.25rem 0rem 1.625rem;
+    padding: 3.25rem 0 1.625rem;
     text-align: center;
   }
 }
 figure blockquote p {
-  font-size: 27px;
   font-size: 1.6875rem;
-  line-height: 39px;
   line-height: 2.4375rem;
 }
 @media screen and (min-width: 40em) {
   figure blockquote p {
-    font-size: 27px;
     font-size: 1.6875rem;
-    line-height: 39px;
-    line-height: 2.4375rem;
+    line-height: 2.5833333333rem;
   }
 }
 
@@ -12705,14 +12487,12 @@ mark {
 }
 
 small {
-  line-height: 13px;
   line-height: 0.8125rem;
   font-size: 70%;
 }
 @media screen and (min-width: 40em) {
   small {
-    line-height: 13px;
-    line-height: 0.8125rem;
+    line-height: 0.8611111111rem;
   }
 }
 
@@ -12735,7 +12515,6 @@ sub {
 /* Paragraph
 ========================================================================== */
 .attention-grabber {
-  font-size: 19.2px;
   font-size: 1.2rem;
 }
 

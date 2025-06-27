@@ -1,11 +1,7 @@
 @use "../gutenberg-config";
-@use "../mixins/line-height" as line-height;
-@use "../mixins/margin" as margin;
-@use "../mixins/padding" as padding;
-@use "../mixins/font-size" as font-size;
 
 figcaption {
-  @include line-height.line-height(1);
+  line-height: 1.625rem;
   color: gutenberg-config.$color-font-figcaption;
   display: block;
   font-size: .8125rem;
@@ -13,8 +9,8 @@ figcaption {
   margin-bottom: 0;
   text-align: center;
 
-  @media screen and (min-width: #{ gutenberg-config.$max-width + 5 + 'em'}) {
-    @include line-height.line-height(1);
+  @media screen and (min-width: 40em) {
+    line-height: 1.7222222222rem;
     margin-bottom: 0;
   }
 
@@ -27,36 +23,35 @@ figure {
 figure.floatLeft,
 figure.floatRight {
 
-  @media screen and (min-width: #{ gutenberg-config.$max-width + 5 + 'em'}) {
-    max-width: #{.5 * gutenberg-config.$max-width * gutenberg-config.$base-desktop + 'px'};
-    max-width: #{.5 * gutenberg-config.$max-width + 'rem'};
+  @media screen and (min-width: 40em) {
+    max-width: 17.5rem;
 
     @if gutenberg-config.$paragraph-indent == true {
-      @include padding.padding-equal(1);
-      @include margin.margin-bottom(0);
+      padding: 1.625rem;
+      margin-bottom: 0;
     } @else {
-      @include padding.padding(0, 1);
+      padding: 0 1.625rem;
     }
 
   }
 
   blockquote {
 
-    @media screen and (min-width: #{ gutenberg-config.$max-width + 5 + 'em'}) {
-      @include padding.padding-equal(0);
+    @media screen and (min-width: 40em) {
+      padding: 0;
       text-align: left;
 
       @if gutenberg-config.$paragraph-indent == true {
-        @include margin.margin-top(1);
+        margin-top: 1.625rem;
       }
 
     }
 
     p {
 
-      @media screen and (min-width: #{ gutenberg-config.$max-width + 5 + 'em'}) {
-        @include font-size.font-size(1.2);
-        @include line-height.line-height(1);
+      @media screen and (min-width: 40em) {
+        font-size: 1.2rem;
+        line-height: 1.625rem;
       }
 
     }
