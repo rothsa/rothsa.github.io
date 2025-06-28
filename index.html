@@ -4,65 +4,154 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <title>Sally Roth's Resume</title>
-  <link rel="stylesheet" href="assets/combined.min.css">
+  <link rel="stylesheet" href="assets/combined.css">
   <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <article>
-    <h1>Sally Roth</h1>
-    <h2>sally@sallyroth.dev</h2>
+  <div class="container">
+    <article class="my-5">
+      <h1 class="display-4 text-center">Sally Roth</h1>
+      <p class="lead text-center mb-5">sally@sallyroth.dev</p>
 
-    <h2>GoDaddy</h2>
-    <p class="attention-grabber">Principal Site Reliability Engineer (11/2022 to present)</p>
-    <p>Developing highly available infrastructure as code for GoDaddy's SMTP API Platform. Utilizing a wide variety of AWS and on-prem infrastructure components including Fargate, Kinesis, and GitHub Actions. Enabling and contributing to secure, observable, well-architected application stack including Rails, NodeJS and MySQL.</p>
+      <div class="card mb-4">
+        <div class="card-body">
+          <h3 class="card-title h4">Professional Summary</h3>
+          <p class="card-text">Seasoned Site Reliability Engineer with 15+ years of experience in DevOps, SRE, and infrastructure/platform engineering. Proven track record designing and maintaining large-scale, highly available cloud systems for companies including GoDaddy, Ripple, Oracle, Auth0, and GitHub. Expert in AWS and multi-cloud environments, automation (Terraform, Kubernetes, CI/CD pipelines), and observability tools (Prometheus, Grafana, Datadog) to ensure reliable and secure services. Strong leadership in cross-team collaboration and incident management, with a passion for improving developer experience through robust internal platforms and automation.</p>
+        </div>
+      </div>
 
-    <h2>Ripple</h2>
-    <p class="attention-grabber">Staff Technical Operations Engineer (09/2019 to 11/2022)</p>
-    <p>Leading design, deployment, and maintenance for a diverse AWS/GCP observability toolset including Prometheus, Grafana, and Loki using Go, Bash, Python, Salt and Kubernetes. Consulting and educating developers on instrumentation of observable and maintainable systems. Leading consolidation, deployment and administration of all SAAS observability tools including Grafana Cloud, Cloudwatch, Datadog, Sumologic. Led RBAC Design refactor for all customer facing infrastructure involving a large legacy Terraform, Vault, LDAP, and OKTA deployment. Escalation point for diagnosing and preventing service interruption over most mission-critical services as part of the SRE on-call rotation.</p>
+      <div class="card mb-4">
+        <div class="card-body">
+          <h3 class="card-title h4">Skills</h3>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>Cloud & Platforms:</strong> AWS (EC2, S3, Fargate, CloudWatch), Google Cloud Platform, Microsoft Azure</li>
+            <li class="list-group-item"><strong>Containers & Orchestration:</strong> Docker, Kubernetes</li>
+            <li class="list-group-item"><strong>Infrastructure as Code & Configuration:</strong> Terraform, CloudFormation, Puppet, Chef, SaltStack</li>
+            <li class="list-group-item"><strong>CI/CD & Automation:</strong> Jenkins, GitHub Actions, GitLab CI, Slack (ChatOps), Capistrano, Hubot</li>
+            <li class="list-group-item"><strong>Monitoring & Observability:</strong> Prometheus, Grafana, ELK Stack (Elasticsearch/Logstash/Kibana), Loki, Datadog, Sumo Logic, Splunk</li>
+            <li class="list-group-item"><strong>Programming & Scripting:</strong> Python, Ruby (Rails), Go, Bash/Shell</li>
+            <li class="list-group-item"><strong>Databases:</strong> MySQL, MongoDB</li>
+            <li class="list-group-item"><strong>Operating Systems & Tools:</strong> Linux (Ubuntu, CentOS), Git, Vault, Okta, LDAP</li>
+          </ul>
+        </div>
+      </div>
 
-    <h2>Oracle Corporation</h2>
-    <p class="attention-grabber">Site Reliability Engineer (05/2017 to 09/2019)</p>
-    <p>Using Python, Chef, Ruby and Shell on CentOS to build a wide range of highly available and scalable developer tools and provisioning infrastructure on the Oracle Data Cloud. Building a PAAS using technologies including Prometheus, ELK and GitLab. Working with teams of developers in PAAS deployment for their own systems. Diagnosing and preventing service interruption on tens of thousands of nodes over a wide range services as part of the infrastructure team.</p>
+      <h2 class="h4 mt-5">Work Experience</h2>
 
-    <h2>Auth0</h2>
-    <p class="attention-grabber">Production Engineer (06/2016 to 05/2017)</p>
-    <p>Using Salt, Terraform, Python, Slack, and Jenkins on Ubuntu to build highly available and scalable CI/CD server and MongoDB database infrastructure on AWS and Azure. Constructing fast, reliable tools for monitoring and availability utilizing Datadog and Kibana. Diagnosing and preventing service interruption as part of the infrastructure team.</p>
+      <div class="card mb-4">
+        <div class="card-body">
+          <h3 class="card-title h4">GoDaddy</h3>
+          <h6 class="card-subtitle mb-2 text-muted">Principal Site Reliability Engineer (Nov 2022 – Present)</h6>
+          <ul class="list-unstyled">
+            <li>Develop and maintain highly available Infrastructure as Code for GoDaddy's high-volume SMTP API platform, ensuring reliability and scalability.</li>
+            <li>Leverage a hybrid cloud environment with AWS services (e.g., Fargate, Kinesis) and on-premise resources to build a secure, well-architected application stack (Rails, Node.js, MySQL).</li>
+            <li>Implement and enhance CI/CD pipelines using GitHub Actions to automate deployments and infrastructure updates, improving deployment speed and consistency.</li>
+            <li>Collaborate with development teams to embed robust security and observability (metrics, logging, tracing) into the platform, following best practices for cloud architecture.</li>
+          </ul>
+        </div>
+      </div>
 
-    <h2>GoDaddy, LLC</h2>
-    <p class="attention-grabber">Systems Engineer (02/2015 - 06/2016)</p>
-    <p>Designed and built a chatops driven CI/CD pipeline using Jenkins, Slack, Capistrano, Rails, and Hubot on CentOS for the launch of a new Email Marketing product at GoDaddy. Puppetized the server infrastructure for launch as well as maintained uptime on the product. Designed and built a staged CI/CD pipeline for delivery of configuration management code and log reporting using Jenkins, Shell, Puppet, Python, and Elasticsearch for over 4000 diverse, legacy MySQL instances. Advised and collaborated on the puppetization to normalize server configuration in those instances.</p>
+      <div class="card mb-4">
+        <div class="card-body">
+          <h3 class="card-title h4">Ripple</h3>
+          <h6 class="card-subtitle mb-2 text-muted">Staff Technical Operations Engineer (Sep 2019 – Nov 2022)</h6>
+          <ul class="list-unstyled">
+            <li>Led the design, deployment, and maintenance of a multi-cloud observability platform (AWS and GCP) using Kubernetes, implementing monitoring and logging tools (Prometheus, Grafana, Loki) with custom automation in Go, Python, and Bash. This ensured comprehensive visibility across all services and reduced alert fatigue.</li>
+            <li>Consulted and educated development teams on instrumentation best practices for building observable and maintainable systems, improving application telemetry and reliability.</li>
+            <li>Consolidated and administered multiple SaaS monitoring tools - Grafana Cloud, Amazon CloudWatch, Datadog, Sumo Logic - into a unified observability stack, streamlining alerting and reducing tool overlap.</li>
+            <li>Led a major RBAC redesign for all customer-facing infrastructure, refactoring a large legacy access management stack (Terraform, HashiCorp Vault, LDAP, Okta) to improve security and simplify user provisioning.</li>
+            <li>Served as an escalation point in the SRE on-call rotation, diagnosing and resolving incidents on mission-critical services. Improved incident response and prevention, helping achieve high uptime and reliability.</li>
+          </ul>
+        </div>
+      </div>
 
-    <h2>GitHub, Inc.</h2>
-    <p class="attention-grabber">Mail Guru (10/2013 - 12/2014)</p>
-    <p>Built scalable, highly available, secure and flexible infrastructure as part of the Operations team using knowledge of Puppet, RoR, Shell, and Ubuntu. Worked closely with developer teams as well as independently to deliver email infrastructure for multiple applications using PMTA, Postfix, and Email RFC knowledge. Collaborated with a wide variety of teams to deliver an email solution that met their particular needs, including sales, marketing, and training using both internal infrastructure and a number of external Email Service Providers. Communicated with customers to diagnose problems interacting with GitHub via email, using Splunk, internal investigative tools, and Ubuntu server administration knowledge.</p>
+      <div class="card mb-4">
+        <div class="card-body">
+          <h3 class="card-title h4">Oracle Corporation</h3>
+          <h6 class="card-subtitle mb-2 text-muted">Site Reliability Engineer (May 2017 – Sep 2019)</h6>
+          <ul class="list-unstyled">
+            <li>Built and automated a wide range of developer infrastructure tools and provisioning systems for Oracle Data Cloud using Python, Ruby, Shell scripting and configuration management (Chef) on CentOS, ensuring high availability and scalability.</li>
+            <li>Designed and launched an internal Platform-as-a-Service (PaaS) for development teams, incorporating Prometheus for monitoring, an ELK stack for centralized logging, and GitLab for source control/CI. This platform improved deployment consistency and developer productivity.</li>
+            <li>Onboarded multiple engineering teams to the new PaaS, guiding them in deploying their applications on the platform and adopting best practices for reliability and performance.</li>
+            <li>Monitored and managed operations at massive scale (tens of thousands of nodes), troubleshooting and preventing service interruptions across diverse services as part of the core infrastructure team.</li>
+          </ul>
+        </div>
+      </div>
 
-    <h2>Mad Mimi, LLC</h2>
-    <p class="attention-grabber">Chief of Email Infrastructure & Delivery (11/2009 - 10/2013)</p>
-    <p>Designed anti-abuse tools and strategies and managed a team of two anti-abuse specialists. Managed and optimized Rails, PMTA, and Postfix for bulk email delivery. Built analysis tools in Rails for the anti-abuse and customer support team. Worked with customers and ISPs to coordinate responsible bulk email sending practices.</p>
+      <div class="card mb-4">
+        <div class="card-body">
+          <h3 class="card-title h4">Auth0</h3>
+          <h6 class="card-subtitle mb-2 text-muted">Production Engineer (Jun 2016 – May 2017)</h6>
+          <ul class="list-unstyled">
+            <li>Implemented a chatops-driven CI/CD pipeline using Jenkins (integrated with Slack and Hubot) to automate deployments on AWS and Azure, enabling rapid and reliable release cycles.</li>
+            <li>Provisioned and managed scalable MongoDB database clusters in AWS and Azure, using Terraform for infrastructure as code and SaltStack for configuration management to ensure consistency across environments.</li>
+            <li>Developed monitoring dashboards and alerting solutions using Datadog and Kibana, improving visibility into system performance and reducing mean time to detect issues.</li>
+            <li>Participated in 24/7 on-call rotations and resolved production incidents, quickly diagnosing issues to minimize downtime and ensure service continuity.</li>
+          </ul>
+        </div>
+      </div>
 
-    <h2>Education</h2>
-    <p class="attention-grabber">Walla Walla University - B.S.E., Electrical Engineering concentration, Minor in Mathematics (‘09)</p>
+      <div class="card mb-4">
+        <div class="card-body">
+          <h3 class="card-title h4">GoDaddy</h3>
+          <h6 class="card-subtitle mb-2 text-muted">Systems Engineer (Feb 2015 – Jun 2016)</h6>
+          <ul class="list-unstyled">
+            <li>Designed and built a ChatOps-driven CI/CD pipeline (Jenkins, Slack, Hubot, Capistrano, Rails on CentOS) to support the launch of a new GoDaddy Email Marketing product, enabling developers to deploy and test features rapidly.</li>
+            <li>Automated server provisioning and configuration with Puppet for the product's launch, ensuring consistent environments and maintaining high uptime post-launch.</li>
+            <li>Developed a staged deployment pipeline for configuration management code and log aggregation across 4,000+ legacy MySQL instances, utilizing Jenkins, shell scripts, Puppet, Python, and Elasticsearch to improve manageability of a large server fleet.</li>
+            <li>Collaborated with database and operations teams to normalize configurations on legacy servers via Puppet, reducing configuration drift and operational errors.</li>
+          </ul>
+        </div>
+      </div>
 
-    <h2>Miscellany</h2>
-    <p>
-      <ul>
-        <li>Languages: English (Native), Spanish (B1), Croatian (A2)</li>
-        <li>Ultra-minimalist traveler: Visited 16 counties, lived in 4, carrying only a 20-liter pack.</li>
-          <li>16 years of intensive classical training on piano, flute, voice, and oboe.</li>
-        <li>Speaker at various Ruby meetups, DevOps DC, PuppetConf 2015, 2016, and  2017, Scaleconf Columbia, RubyFuza in Cape Town, South Africa, and SendGrid.com Training Events.</li>
-        <li>USAW L2 Coach, 8-time 59kg/64kg USAW Open Series Qualifier, NASM Certified Personal Trainer, Catalyst Weightlifting L2 Certification, Crossfit L2 Trainer, amateur powerlifter and strongwoman.</li>
-        <li>Interviewed in Developer Hegemony by Erik Dietrich, Podcasts Developer on Fire and Hanging Out With Mad Mimi</li>
-        <li>Founded Engineers Without Borders Chapter at Walla Walla University.</li>
-        <li>Founded Phoenix Puppet Users Group</li>
+      <div class="card mb-4">
+        <div class="card-body">
+          <h3 class="card-title h4">GitHub, Inc.</h3>
+          <h6 class="card-subtitle mb-2 text-muted">Email Infrastructure Engineer ("Mail Guru") (Oct 2013 - Dec 2014)</h6>
+          <ul class="list-unstyled">
+            <li>Engineered scalable, highly available email infrastructure as part of the Operations team, using Puppet for automation, Ubuntu Linux administration, and custom scripts and tools (Ruby on Rails, Bash) to support GitHub's email services.</li>
+            <li>Implemented and managed bulk email delivery systems (PowerMTA and Postfix), delivering reliable email functionality for multiple internal applications. Worked closely with cross-functional teams (sales, marketing, training) to tailor email solutions to their needs, utilizing internal infrastructure and external Email Service Providers as appropriate.</li>
+            <li>Investigated and resolved customer-facing email issues (e.g. webhook or notification problems) by analyzing logs with Splunk and internal tools, improving the email delivery success rate and user satisfaction.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <div class="card-body">
+          <h3 class="card-title h4">Mad Mimi, LLC</h3>
+          <h6 class="card-subtitle mb-2 text-muted">Chief of Email Infrastructure & Delivery (Nov 2009 - Oct 2013)</h6>
+          <ul class="list-unstyled">
+            <li>Led email deliverability and anti-abuse efforts for a marketing email platform, designing anti-abuse tools and strategies to prevent spam and manage sending reputation. Managed a team of two specialists to enforce best practices and maintain high deliverability rates.</li>
+            <li>Managed and optimized a high-volume email infrastructure (Ruby on Rails application with PowerMTA and Postfix servers) to reliably send bulk emails to customers, scaling to meet growth while maintaining performance.</li>
+            <li>Built internal analytics tools in Ruby on Rails for the anti-abuse and customer support teams, enabling better monitoring of email sending patterns and quicker response to issues.</li>
+            <li>Collaborated with clients and Internet Service Providers to coordinate responsible bulk email sending practices, resolving deliverability challenges and ensuring compliance with ISP policies.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="h4 mt-5">Education</h2>
+      <p class="text-muted mb-1">Walla Walla University - B.S.E., Electrical Engineering concentration, Minor in Mathematics (‘09)</p>
+
+      <h2 class="h4 mt-5">Additional Information</h2>
+      <ul class="list-group">
+        <li class="list-group-item"><strong>Languages:</strong> Native English; Proficient in Spanish (B1); Basic Croatian (A2)</li>
+        <li class="list-group-item"><strong>Public Speaking:</strong> Presented at Ruby and DevOps meetups and international conferences, including DevOps DC, PuppetConf 2015-2017, ScaleConf Colombia, RubyFuza (South Africa), and SendGrid Training events</li>
+        <li class="list-group-item"><strong>Community Leadership:</strong> Founded an Engineers Without Borders chapter at Walla Walla University, and founded the Phoenix Puppet Users Group to foster local DevOps community engagement</li>
+        <li class="list-group-item"><strong>Media & Recognition:</strong> Interviewed in Developer Hegemony by Erik Dietrich, and featured on tech podcasts "Developer on Fire" and "Hanging Out With Mad Mimi"</li>
+        <li class="list-group-item"><strong>Travel & Culture:</strong> Ultra-minimalist traveler who has visited 16 countries and lived in 4, often with just a 20-liter backpack</li>
+        <li class="list-group-item"><strong>Music & Arts:</strong> 16 years of classical training in piano, flute, voice, and oboe</li>
+        <li class="list-group-item"><strong>Athletics:</strong> Certified USA Weightlifting Level 2 Coach and 8-time USAW Open Series qualifier (59kg/ 64kg class); NASM Certified Personal Trainer; Catalyst Weightlifting Level 2 & CrossFit Level 2 Trainer; competitive powerlifter and strongwoman</li>
       </ul>
-    </p>
-  </article>
-  <footer>
-    <p>
-      <small>
-        Sally Roth ©2025.
-      </small>
-    </p>
+    </article>
+  </div>
+  <footer class="bg-light py-4 mt-5">
+    <div class="container text-center">
+      <p class="text-muted mb-0">
+        <small>
+          Sally Roth ©2025. | Designed with Gemini
+        </small>
+      </p>
+    </div>
   </footer>
   <script src="assets/combined.min.js"></script>
 </body>

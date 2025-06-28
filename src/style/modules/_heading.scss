@@ -1,3 +1,5 @@
+@use "../gutenberg-config";
+
 /* Headings
    ========================================================================== */
 
@@ -15,27 +17,20 @@ $headings: (
 // Set headings sizes, line-heights and margins
 @each $heading, $properties in $headings {
   #{$heading} {
-    @include font-size(nth($properties, 1));
-    @include line-height(nth($properties, 2));
-    @include margin-top(nth($properties, 3));
-    @include margin-bottom(nth($properties, 4));
+    font-size: #{nth($properties, 1) * 1rem};
+    line-height: #{nth($properties, 2) * 1.625rem};
+    margin-top: #{nth($properties, 3) * 1.625rem};
+    margin-bottom: #{nth($properties, 4) * 1.625rem};
   }
 }
 
-@media screen and (min-width: #{ $max-width + 5 + 'em'}) {
-  $leading: $leading-desktop;
-  $leading-rem: $leading-rem-desktop;
-
-  @import '../mixins/font-size';
-  @import '../mixins/line-height';
-  @import '../mixins/margin';
-
+@media screen and (min-width: 40em) {
   @each $heading, $properties in $headings {
     #{$heading} {
-      @include font-size(nth($properties, 1));
-      @include line-height(nth($properties, 2));
-      @include margin-top(nth($properties, 3));
-      @include margin-bottom(nth($properties, 4));
+      font-size: #{nth($properties, 1) * 1.125rem};
+      line-height: #{nth($properties, 2) * 1.7rem};
+      margin-top: #{nth($properties, 3) * 1.7rem};
+      margin-bottom: #{nth($properties, 4) * 1.7rem};
     }
   }
 
@@ -43,15 +38,10 @@ $headings: (
 
 // Set margins between headings
 h1 + h2 {
-  @include margin-top(1);
+  margin-top: 1.625rem;
 
-  @media screen and (min-width: #{ $max-width + 5 + 'em'}) {
-    $leading: $leading-desktop;
-    $leading-rem: $leading-rem-desktop;
-
-    @import '../mixins/margin';
-
-    @include margin-top(1);
+  @media screen and (min-width: 40em) {
+    margin-top: 1.7222222222rem;
   }
 
 }
@@ -59,29 +49,19 @@ h1 + h2 {
 h2 + h3,
 h3 + h4,
 h4 + h5 {
-  @include margin-top(.5);
+  margin-top: .8125rem;
 
-  @media screen and (min-width: #{ $max-width + 5 + 'em'}) {
-    $leading: $leading-desktop;
-    $leading-rem: $leading-rem-desktop;
-
-    @import '../mixins/margin';
-
-    @include margin-top(.5);
+  @media screen and (min-width: 40em) {
+    margin-top: .8611111111rem;
   }
 
 }
 
 h5 + h6 {
-  @include margin-top(-.5);
+  margin-top: -.8125rem;
 
-  @media screen and (min-width: #{ $max-width + 5 + 'em'}) {
-    $leading: $leading-desktop;
-    $leading-rem: $leading-rem-desktop;
-
-    @import '../mixins/margin';
-
-    @include margin-top(-.5);
+  @media screen and (min-width: 40em) {
+    margin-top: -.8611111111rem;
   }
 
 }
@@ -92,14 +72,14 @@ h6 {
 }
 
 // Change headings font if a heading font is set
-@if $font-headings != null {
+@if gutenberg-config.$font-headings != null {
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    font-family: $font-headings;
+    font-family: gutenberg-config.$font-headings;
   }
 }
 

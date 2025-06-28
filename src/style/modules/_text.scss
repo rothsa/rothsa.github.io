@@ -1,3 +1,5 @@
+@use "../gutenberg-config";
+
 // Clear margin for line breaks
 br {
   margin-bottom: 0;
@@ -37,17 +39,12 @@ mark {
 }
 
 small {
-  @include line-height(.5);
+  line-height: .8125rem;
 
   font-size: 70%;
 
-  @media screen and (min-width: #{ $max-width + 5 + 'em'}) {
-    $leading: $leading-desktop;
-    $leading-rem: $leading-rem-desktop;
-
-    @import '../mixins/line-height';
-
-    @include line-height(.5);
+  @media screen and (min-width: 40em) {
+    line-height: .8611111111rem;
   }
 
 }
@@ -72,24 +69,19 @@ sub {
 /* Paragraph
 ========================================================================== */
 
-@if $paragraph-indent == true {
+@if gutenberg-config.$paragraph-indent == true {
 
   p + p {
-    @include margin-top(-1);
-    text-indent: #{ $leading + 'px'};
-    text-indent: #{ $leading-rem + 'rem'};
+    margin-top: -1.625rem;
+    text-indent: 1.625rem;
 
   }
 
   .floatLeft + p,
   .floatRight + p {
 
-    @media screen and (min-width: #{ $max-width + 5 + 'em'}) {
-      $leading: $leading-desktop;
-      $leading-rem: $leading-rem-desktop;
-
-      text-indent: #{ $leading + 'px'};
-      text-indent: #{ $leading-rem + 'rem'};
+    @media screen and (min-width: 40em) {
+      text-indent: 1.7222222222rem;
     }
 
   }
@@ -102,21 +94,16 @@ sub {
 
 // Attention grabber
 .attention-grabber {
-  @include font-size(1.2);
+  font-size: 1.2rem;
 }
 
-@media screen and (min-width: #{ $max-width + 5 + 'em'}) {
-  $leading: $leading-desktop;
-  $leading-rem: $leading-rem-desktop;
-
-  @import '../mixins/margin';
-
-  @if $paragraph-indent == true {
+  @media screen and (min-width: 40em) {
+  @if gutenberg-config.$paragraph-indent == true {
 
     p + p,
     .floatLeft + p,
     .floatRight + p {
-      @include margin-top(-1);
+      margin-top: -1.7222222222rem;
     }
 
   }
