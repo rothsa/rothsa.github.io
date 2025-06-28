@@ -11,9 +11,7 @@ License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/li
 @use "gutenberg-config";
 @use "../../node_modules/bootstrap/scss/bootstrap";
 
-@use "helpers/alignment";
 
-@use "layout/aside";
 @use "layout/base";
 @use "layout/footer";
 @use "layout/header";
@@ -22,12 +20,12 @@ License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/li
 
 @use "modules/anchor";
 @use "modules/article";
-@use "modules/audio";
-@use "modules/canvas";
+
+
 @use "modules/code";
-@use "modules/details";
+
 @use "modules/figure";
-@use "modules/form";
+
 @use "modules/heading";
 @use "modules/horizontal-rule";
 @use "modules/image";
